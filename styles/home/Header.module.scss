@@ -1,0 +1,46 @@
+.header {
+  margin: 0 56px;
+  display: flex;
+  align-items: self-start;
+  padding-top: 28px;
+  height: 72px;
+  z-index: 2;
+
+  &-logo {
+    user-select: none;
+    pointer-events: none;
+    height: 45px;
+    width: 167px;
+    position: relative;
+    margin-right: auto;
+  }
+  &-action {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    &__picker {
+      padding: 8px 22px;
+      font-size: 14px;
+      line-height: 18px;
+      background: rgba(0,0,0,.4);
+      border: 1px solid #aaa;
+      color: #fff;
+
+      &:focus-visible {
+        outline: none;
+      }
+      &:focus {
+        outline: #fff 1px solid;
+      }
+    }
+    &__link {
+      background: $brand-primary;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 8px 18px;
+      border-radius: 3px;
+    }
+  }
+}

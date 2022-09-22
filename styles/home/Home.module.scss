@@ -1,0 +1,19 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+
+  &__sections {
+    display: flex;
+    flex-direction: column;
+
+    &-card {
+      background: transparent;
+      border-bottom: 8px solid #222;
+      color: #fff;
+      margin-bottom: 0;
+      padding: 70px 45px;
+      position: relative;
+    }
+  }
+}
