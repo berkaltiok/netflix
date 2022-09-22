@@ -5,3 +5,13 @@ body {
   font-family: "NetflixSans", Helvetica Neue, Helvetica, Arial, sans-serif;
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+ul {
+  list-style: none;
+}
