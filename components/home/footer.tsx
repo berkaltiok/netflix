@@ -30,14 +30,12 @@ export default function Footer() {
         </Link>
       </div>
       <ul className={styles.footer__list}>
-        {links.map((item =>
-          <>
-            <li className={styles["footer__list-item"]}>
-              <Link href={item.link}>
-                <a>{item.text}</a>
-              </Link>
-            </li>
-          </>
+        {links.map(((item, key) =>
+          <li key={key} className={styles["footer__list-item"]}>
+            <Link href={item.link}>
+              <a>{item.text}</a>
+            </Link>
+          </li>
         ))}
       </ul>
       <select className={styles.footer__picker}>
