@@ -1,0 +1,138 @@
+.tv {
+  margin: -10% -5% -5% 0;
+  overflow: hidden;
+  position: relative;
+
+  &__image {
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    user-select: none;
+    pointer-events: none;
+    z-index: 2;
+  }
+  &__video {
+    height: 100%;
+    left: 50%;
+    max-height: 54%;
+    max-width: 73%;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    top: 46%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+
+    video {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+.mobile {
+  margin: -8% 0 -4% -15%;
+  min-height: 100px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &__image {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    user-select: none;
+    pointer-events: none;
+  }
+  &__card {
+    padding: 8px 12px;
+    align-items: center;
+    background: #000;
+    border: 2px solid hsla(0,0%,100%,.25);
+    border-radius: 0.75em;
+    bottom: 8%;
+    box-shadow: 0 0 2em 0 #000;
+    display: flex;
+    left: 50%;
+    margin: 0 auto;
+    min-width: 15em;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 60%;
+
+    &-image {
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 0 16px 0 0;
+      user-select: none;
+      pointer-events: none;
+      width: auto;
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      margin-right: auto;
+    }
+    &-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    &-status {
+      color: #0071eb;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    &-animation {
+      content: "";
+      background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) 50% no-repeat;
+      background-size: 100%;
+      display: block;
+      flex-grow: 0;
+      flex-shrink: 0;
+      height: 48px;
+      outline: 2px solid #000;
+      outline-offset: -2px;
+      width: 48px;
+    }
+  }
+}
+.devices {
+  margin: -5% -10% 0 0;
+  overflow: hidden;
+  position: relative;
+
+  &__image {
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    user-select: none;
+    pointer-events: none;
+    z-index: 2;
+  }
+  &__video {
+    height: 100%;
+    left: 50%;
+    max-height: 47%;
+    max-width: 63%;
+    position: absolute;
+    top: 34%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+
+    video {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+.kids {
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  pointer-events: none;
+
+  &__image {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+  }
+}
