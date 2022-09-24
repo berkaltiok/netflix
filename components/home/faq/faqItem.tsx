@@ -3,6 +3,7 @@ import { useRef } from "react";
 
 export default function faqItem({ item, onToggle, active }: any) {
   const { question, answer } = item;
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const contentEl: any = useRef();
 
   return (
