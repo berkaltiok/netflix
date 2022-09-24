@@ -52,11 +52,41 @@
     }
   }
 }
+@media (max-width: 950px) {
+  .home {
+    &__feature {
+      flex-direction: column !important;
 
+      &-content {
+        width: 100%;
+        margin: 0;
+        padding: 0 !important;
+        text-align: center;
+      }
+      &-title {
+        font-size: 40px;
+      }
+      &-description {
+        font-size: 20px;
+        margin: 15px 0 5px;
+      }
+      &-card {
+        margin-top: 16px;
+        max-width: 600px;
+        width: 100%;
+      }
+    }
+  }
+}
 @media (max-width: 550px) {
   .home {
     &__card {
       padding: 50px 5%;
+    }
+    &__feature {
+      &-title {
+        font-size: 26px;
+      }
     }
   }
 }

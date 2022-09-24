@@ -22,7 +22,7 @@ export function Mobile() {
       <Image className={styles["mobile__image"]} src="/../public/home/feature/mobile/mobile.jpg" width={640} height={480} objectFit="cover" alt="tv image" />
       <div className={styles["mobile__card"]}>
         <div className={styles["mobile__card-image"]}>
-          <Image src="/../public/home/feature/mobile/boxshot.png" width={58} height={80} objectFit="cover" alt="tv image" />
+          <Image src="/../public/home/feature/mobile/boxshot.png" layout="fill" objectFit="cover" alt="tv image" />
         </div>
         <div className={styles["mobile__card-content"]}>
           <span className={styles["mobile__card-title"]}>Stranger Things</span>
