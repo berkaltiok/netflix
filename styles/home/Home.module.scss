@@ -52,3 +52,11 @@
     }
   }
 }
+
+@media (max-width: 550px) {
+  .home {
+    &__card {
+      padding: 50px 5%;
+    }
+  }
+}

@@ -48,3 +48,31 @@
     }
   }
 }
+
+@media (max-width: 1450px) {
+  .hero {
+    &__content {
+      &-title {
+        font-size: 50px;
+      }
+
+      h1, h2 {
+        max-width: 660px;
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .hero {
+    &__content {
+      padding: 30px 0;
+
+      &-title {
+        font-size: 28px;
+      }
+      &-description {
+        font-size: 18px;
+      }
+    }
+  }
+}
