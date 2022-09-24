@@ -21,6 +21,7 @@
 }
 .faq-item {
   &__question {
+    cursor: pointer;
     position: relative;
     padding: 21.3px 37.2px 21.3px 31.2px;
     width: 100%;
