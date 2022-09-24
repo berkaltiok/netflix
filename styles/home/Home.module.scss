@@ -9,7 +9,7 @@
   }
   &__card {
     background: transparent;
-    border-bottom: 8px solid #222;
+    border-bottom: 8px solid $brand-border;
     color: #fff;
     margin-bottom: 0;
     padding: 70px 45px;
@@ -18,25 +18,30 @@
   &__feature {
     display: flex;
     align-items: center;
-    gap: 48px;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1100px;
 
     &-content {
-      display: flex;
-      flex-direction: column;
-      gap: 17.5px;
-      max-width: 52%;
+      margin: -5% 0;
+      flex: 0 1 auto;
+      height: 100%;
+      width: 52%;
+      z-index: 3;
+      font-size: 26px;
+      font-weight: 400;
     }
     &-title {
       font-size: 50px;
-      line-height: 1.1;
-      font-weight: bold;
+      font-weight: 500;
+      line-height: 1;
+      margin-top: 0;
+      margin-bottom: 8px;
     }
     &-description {
       font-size: 26px;
       font-weight: 400;
+      margin: 19.5px 0 6.5px;
     }
     &-card {
       box-sizing: border-box;

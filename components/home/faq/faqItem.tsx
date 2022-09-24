@@ -1,6 +1,5 @@
 import styles from '../../../styles/home/Faq.module.scss'
 import { useRef } from "react";
-import {rotate} from "next/dist/server/lib/squoosh/impl";
 
 export default function faqItem({ item, onToggle, active }: any) {
   const { question, answer } = item;
