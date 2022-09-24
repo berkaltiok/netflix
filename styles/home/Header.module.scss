@@ -1,11 +1,25 @@
 .header {
-  margin: 0 56px;
-  display: flex;
-  align-items: self-start;
-  padding-top: 28px;
+  background-color: transparent;
+  bottom: 0;
   height: 72px;
-  z-index: 2;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1920px;
+  padding-top: 20px;
+  position: relative;
+  right: 0;
+  top: 0;
+  transition: background-color .5s;
+  width: 100%;
+  z-index: 10;
 
+  &-wrapper {
+    margin: 0 56px;
+    display: flex;
+    align-items: self-start;
+    padding-top: 8px;
+    z-index: 2;
+  }
   &-logo {
     user-select: none;
     pointer-events: none;
