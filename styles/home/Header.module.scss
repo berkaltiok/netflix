@@ -60,3 +60,52 @@
   }
 }
 
+@media (max-width: 1450px) {
+  .header {
+    height: 64px;
+
+    &-logo {
+      height: 36px;
+      width: 134px;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .header {
+    height: 45px;
+
+    &-wrapper {
+      margin: 0 45px;
+    }
+    &-logo {
+      height: 32px;
+      width: 108px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .header {
+    height: 45px;
+
+    &-wrapper {
+      margin: 0 5%;
+    }
+    &-logo {
+      height: 24px;
+      width: 88px;
+      padding-top: 0;
+    }
+    &-action {
+      gap: 12px;
+
+      &__picker {
+        padding: 4px 22px;
+      }
+      &__link {
+        padding: 4px 8px;
+        font-size: 14.4px;
+      }
+    }
+  }
+}
+
