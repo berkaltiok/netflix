@@ -1,6 +1,5 @@
 import type { AppProps } from 'next/app'
 import '../styles/globals.scss'
-import '../styles/_variables.scss'
 import Head from "next/head";
 
 
