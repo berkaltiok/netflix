@@ -8,7 +8,7 @@ export default function faqItem({ item, onToggle, active }: any) {
   return (
     <div className={styles["faq-item"]}>
       <button onClick={onToggle} className={styles["faq-item__question"]}>
-        <span>{question}</span>
+        {question}
         <svg viewBox="0 0 20.5 20.5" focusable="true" style={
           active
             ? { rotate: '180deg' }

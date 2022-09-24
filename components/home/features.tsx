@@ -28,7 +28,7 @@ export function Mobile() {
           <span className={styles["mobile__card-title"]}>Stranger Things</span>
           <span className={styles["mobile__card-status"]}>Downloading...</span>
         </div>
-        <div className={styles["mobile__card-animation"]}></div>
+        <div className={styles["mobile__card-animation"]} />
       </div>
     </div>
   )
