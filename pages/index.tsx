@@ -5,6 +5,7 @@ import styles from '../styles/home/Home.module.scss'
 import Footer from "../components/home/footer";
 import Faq from "../components/home/faq";
 import {TV, Devices, Kids, Mobile} from "../components/home/features"
+import classNames from "classnames";
 
 const Home: NextPage = () => {
   const Feature = (props: any) => {
@@ -46,7 +47,7 @@ const Home: NextPage = () => {
           <Kids />
         </Feature>
     },
-    { component: <Faq /> },
+    { component: <Faq />, additionalClass: styles['home__card-faq'] },
   ]
 
   return (
@@ -54,7 +55,7 @@ const Home: NextPage = () => {
       <Header />
       <div className={styles.home__sections}>
         {list.map((item, key) =>
-          <div key={key} className={styles["home__card"]}>
+          <div key={key} className={classNames(styles["home__card"], item?.additionalClass)}>
             {item.component}
           </div>
         )}
