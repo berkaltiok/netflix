@@ -1,9 +1,9 @@
 .footer {
   color: #737373;
-  max-width: 900px;
-  padding: 70px 0 20px;
+  max-width: 990px;
+  padding: 70px 45px 20px;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
 
   &__top {
     margin-bottom: 30px;
@@ -54,6 +54,7 @@
   &__country {
     font-size: 13px;
     margin-top: 24px;
+    margin-bottom: 13px;
   }
 }
 
@@ -68,6 +69,8 @@
 }
 @media (max-width: 550px) {
   .footer {
+    padding: 50px 5% 20px;
+
     &__list {
       &-item {
         width: 50%;
