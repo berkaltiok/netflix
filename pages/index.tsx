@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
+import styles from '../styles/home/Home.module.scss'
+import classNames from "classnames";
+import {TV, Devices, Kids, Mobile} from "../components/home/features"
 import Header from "../components/home/header";
 import Hero from "../components/home/hero";
-import styles from '../styles/home/Home.module.scss'
 import Footer from "../components/home/footer";
 import Faq from "../components/home/faq";
-import {TV, Devices, Kids, Mobile} from "../components/home/features"
-import classNames from "classnames";
 
 const Home: NextPage = () => {
   const Feature = (props: any) => {
