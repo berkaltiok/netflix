@@ -1,9 +1,8 @@
-import styles from '../../../styles/home/Faq.module.scss'
 import { useRef } from "react";
+import styles from '../../../styles/home/Faq.module.scss'
 
-export default function faqItem({ item, onToggle, active }: any) {
+export default function FaqItem({ item, onToggle, active }: any) {
   const { question, answer } = item;
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const contentEl: any = useRef();
 
   return (
