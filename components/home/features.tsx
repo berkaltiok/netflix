@@ -5,7 +5,7 @@ export function TV() {
   return (
     <div className={styles["tv"]}>
       <div className={styles["tv__image"]}>
-        <Image src="/../public/home/feature/tv/tv.png" width={640} height={480} objectFit="cover" alt="tv image" />
+        <Image src="/home/feature/tv/tv.png" width={640} height={480} objectFit="cover" alt="tv image" />
       </div>
       <div className={styles["tv__video"]}>
         <video autoPlay playsInline muted loop>
@@ -19,10 +19,10 @@ export function TV() {
 export function Mobile() {
   return (
     <div className={styles["mobile"]}>
-      <Image className={styles["mobile__image"]} src="/../public/home/feature/mobile/mobile.jpg" width={640} height={480} objectFit="cover" alt="tv image" />
+      <Image className={styles["mobile__image"]} src="/home/feature/mobile/mobile.jpg" width={640} height={480} objectFit="cover" alt="tv image" />
       <div className={styles["mobile__card"]}>
         <div className={styles["mobile__card-image"]}>
-          <Image src="/../public/home/feature/mobile/boxshot.png" layout="fill" objectFit="cover" alt="tv image" />
+          <Image src="/home/feature/mobile/boxshot.png" layout="fill" objectFit="cover" alt="tv image" />
         </div>
         <div className={styles["mobile__card-content"]}>
           <span className={styles["mobile__card-title"]}>Stranger Things</span>
@@ -37,7 +37,7 @@ export function Devices() {
   return (
     <div className={styles["devices"]}>
       <div className={styles["devices__image"]}>
-        <Image src="/../public/home/feature/devices/device-pile.png" width={640} height={480} alt="tv image" />
+        <Image src="/home/feature/devices/device-pile.png" width={640} height={480} alt="tv image" />
       </div>
       <div className={styles["devices__video"]}>
         <video autoPlay playsInline muted loop>
@@ -51,7 +51,7 @@ export function Devices() {
 export function Kids() {
   return (
     <div className={styles["kids"]}>
-      <Image className={styles["kids__image"]} src="/../public/home/feature/kids.png" width={640} height={480} objectFit="cover" alt="tv image" />
+      <Image className={styles["kids__image"]} src="/home/feature/kids.png" width={640} height={480} objectFit="cover" alt="tv image" />
     </div>
   )
 }

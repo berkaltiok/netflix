@@ -5,7 +5,7 @@ export default function Hero() {
   return (
    <div className={styles.hero}>
      <div className={styles.hero__background}>
-       <Image src="/../public/home/hero.jpg" objectFit="cover" layout="fill" alt="background image"/>
+       <Image src="/home/hero.jpg" objectFit="cover" layout="fill" alt="background image"/>
        <div className={styles["hero__background-filter"]} />
      </div>
      <div className={styles.hero__content}>
