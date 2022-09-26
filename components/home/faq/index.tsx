@@ -1,6 +1,7 @@
 import styles from '../../../styles/home/Faq.module.scss'
 import FaqItem from "./faqItem"
 import {useState} from "react";
+import Email from "../email";
 
 export default function Index() {
   const list = [
@@ -46,6 +47,7 @@ export default function Index() {
       <ul className={styles["faq-list"]}>
         {list.map((item, index: any) => <FaqItem onToggle={() => handleToggle(index)} key={index} item={item} active={index === clicked} />)}
       </ul>
+      <Email />
     </div>
   )
 }
