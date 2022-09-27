@@ -13,6 +13,7 @@
   &-form {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     margin: 0 auto;
   }
   &-input {
@@ -96,5 +97,17 @@
         }
       }
     }
+
+    &:hover {
+      background: #f40612;
+      box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+    }
+  }
+  &-warn {
+    color: #ffa00a;
+    font-size: 15px;
+    margin-bottom: -6px;
+    padding: 6px 3px;
+    text-align: left;
   }
 }
