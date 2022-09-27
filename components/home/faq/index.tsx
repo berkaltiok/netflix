@@ -1,6 +1,6 @@
 import styles from '../../../styles/home/Faq.module.scss'
 import FaqItem from "./faqItem"
-import {useState} from "react";
+import { useState } from "react";
 import Email from "../email";
 
 export default function Index() {
