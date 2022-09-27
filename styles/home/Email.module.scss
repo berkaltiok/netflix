@@ -2,6 +2,7 @@
   padding-top: 14px;
   max-width: 950px;
   text-align: center;
+  position: relative;
 
   &-title {
     font-size: 19px;
@@ -24,7 +25,7 @@
     &__placeholder {
       position: absolute;
       left: 10px;
-      top: 45%;
+      top: 50%;
       color: #8c8c8c;
       font-size: 16px;
       transform: translateY(-50%);
@@ -104,6 +105,9 @@
     }
   }
   &-warn {
+    position: absolute;
+    left: 0;
+    bottom: -24px;
     color: #ffa00a;
     font-size: 15px;
     margin-bottom: -6px;
