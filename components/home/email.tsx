@@ -29,9 +29,6 @@ export default function Email() {
           }
         } else setEmailValidation(emailValidation = "")
       });
-
-    //Warn
-
     //Placeholder
     if (inputValue.length > 0) {
       setPlaceholder(placeholder = true)
@@ -43,7 +40,7 @@ export default function Email() {
       <h3 className={styles["email-title"]}>Ready to watch? Enter your email to create or restart your membership.</h3>
       <div className={styles["email-form"]}>
         <label className={styles["email-input"]}>
-          <input onChange={(e) => {inputStatues(e)}} type="text"/>
+          <input onChange={(e) => {inputStatues(e)}} style={emailValidation !== "" ? {borderBottom: "2px solid #ffa00a"} : {}} type="text"/>
           <span id="placeholder" className={styles["email-input__placeholder"]} style={placeholder ? placeholderClass : {} }>Email address</span>
           <div className={styles["email-warn"]}>{emailValidation}</div>
         </label>
