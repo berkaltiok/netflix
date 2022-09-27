@@ -2,7 +2,7 @@ import {useState} from "react";
 import styles from '../../styles/home/Email.module.scss'
 import * as yup from 'yup';
 
-export default function Email() {
+export default function Email({style}: any) {
   let [placeholder, setPlaceholder] = useState(false)
   let [emailValidation, setEmailValidation] = useState("")
   let placeholderClass = {
@@ -36,7 +36,7 @@ export default function Email() {
   }
 
   return (
-    <form className={styles.email}>
+    <form className={styles.email} style={style}>
       <h3 className={styles["email-title"]}>Ready to watch? Enter your email to create or restart your membership.</h3>
       <div className={styles["email-form"]}>
         <label className={styles["email-input"]}>

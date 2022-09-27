@@ -47,7 +47,7 @@ export default function Index() {
       <ul className={styles["faq-list"]}>
         {list.map((item, index: any) => <FaqItem onToggle={() => handleToggle(index)} key={index} item={item} active={index === clicked} />)}
       </ul>
-      <Email />
+      <Email style={{padding: "14px 5% 0 5%"}} />
     </div>
   )
 }
