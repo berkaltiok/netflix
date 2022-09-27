@@ -62,6 +62,15 @@
     }
   }
 }
+@media (max-width: 1450px) {
+  .hero {
+    &__background {
+      &-filter {
+        background: rgba(0, 0, 0, .4) linear-gradient(0deg, rgba(0, 0, 0, .8) 0, transparent 40%, transparent 75%, rgba(0, 0, 0, .8));
+      }
+    }
+  }
+}
 @media (max-width: 550px) {
   .hero {
     &__content {
