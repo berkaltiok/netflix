@@ -43,7 +43,7 @@ export default function Email({props}: any) {
             onBlur={offFocus}
             onFocus={onFocus}
             onChange={(e) => {inputStatues(e)}}
-            style={emailValidation !== "" ? {borderBottom: "2px solid #ffa00a"} : {}}
+            className={emailValidation !== "" ? styles.warn : ''}
             type="text"/>
           <span id="placeholder" className={classNames(styles["email-input__placeholder"], placeholder ? styles.active : '')}>Email address</span>
           <div className={styles["email-warn"]}>{emailValidation}</div>
