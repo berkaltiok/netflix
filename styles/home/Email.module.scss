@@ -59,6 +59,10 @@
       &:focus {
         border-color: #0071eb;
       }
+
+      &.warn {
+        border-bottom: 2px solid $brand-warn;
+      }
     }
   }
   &-submit {
@@ -109,7 +113,7 @@
     position: absolute;
     left: 0;
     bottom: -24px;
-    color: #ffa00a;
+    color: $brand-warn;
     font-size: 15px;
     margin-bottom: -6px;
     padding: 6px 3px;
