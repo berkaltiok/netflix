@@ -41,7 +41,6 @@
     }
     &__input {
       position: relative;
-      background: #454545;
       border: 0;
       border-radius: 4px;
 
@@ -65,18 +64,22 @@
         width: 100%;
         border: 0;
         outline: none;
+        background: #333;
         border-radius: 4px;
         color: #fff;
         height: 50px;
         line-height: 50px;
         padding: 16px 20px 0;
-        background: transparent;
       }
 
       input:focus ~ span {
         font-size: 11px;
         top: 4px;
         transform: translateY(0);
+      }
+
+      input:focus {
+        background: #454545;
       }
     }
   }
