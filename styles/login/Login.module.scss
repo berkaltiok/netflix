@@ -39,5 +39,45 @@
       margin-bottom: 28px;
       font-family:Helvetica, Arial, sans-serif;
     }
+    &__input {
+      position: relative;
+      background: #454545;
+      border: 0;
+      border-radius: 4px;
+
+      span {
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        inset: 0;
+        color: #8c8c8c;
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 1;
+        height: fit-content;
+        display: flex;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: font .1s ease,top .1s ease,transform .1s ease;
+      }
+      input {
+        width: 100%;
+        border: 0;
+        outline: none;
+        border-radius: 4px;
+        color: #fff;
+        height: 50px;
+        line-height: 50px;
+        padding: 16px 20px 0;
+        background: transparent;
+      }
+
+      input:focus ~ span {
+        font-size: 11px;
+        top: 4px;
+        transform: translateY(0);
+      }
+    }
   }
 }

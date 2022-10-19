@@ -15,6 +15,10 @@ const Login: NextPage = () => {
       </div>
       <form className={styles["login-form"]}>
         <h1 className={styles["login-form__title"]}>Sign In</h1>
+        <label  className={styles["login-form__input"]}>
+          <input type="text" id="emailornumber"/>
+          <span>Email or phone number</span>
+        </label>
       </form>
     </div>
   )
